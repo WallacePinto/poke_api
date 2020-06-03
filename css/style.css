@@ -22,7 +22,6 @@
 .btn-dan:disabled {
     color: #fff;
     background-color: #ee6b2f;
-    border-color: #ee6b2f;
 }
 
 .btn-dan:not(:disabled):not(.disabled):active,
@@ -37,22 +36,6 @@
 .btn-dan:not(:disabled):not(.disabled).active:focus,
 .show>.btn-dan.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem #ee6b2f;
-}
-
-.pokemoninfo {
-    background-color: #4dad5b;
-    margin: 15px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-}
-
-ul {
-    list-style-type: none;
 }
 
 .numeropokemons {
