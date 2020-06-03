@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>PokéAPI</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="color: #FFF; background-color: #FF0000; font-weight: bolder; opacity: 80%;">
+        <a class="navbar-brand" href="#">
+            <img src="img/pokapi.png" width="150" height="auto" alt="" loading="lazy">
+        </a>
+    </nav>
+
+    <div class="container">
+        <br>
+        <div class="row ">
+            <div class='col-md-3'>
+            </div>
+            <div>
+                <div>
+                    <table border="0" cellpadding="0" cellspacing="0" style="width:500px">
+                        <tbody>
+                            <tr>
+                                <td> <img src='./img/n1.jpg'></td>
+                                <td> <img src='./img/n2.jpg'></td>
+                                <td> <img src='./img/n3.jpg'></td>
+                            </tr>
+                            <tr>
+                                <td> <img src='./img/n4.jpg '></td>
+                                <td>
+                                    <div style="width: 210px; height: 153px; background-color:#E6E6FA	; border-radius: 2px;">
+                                        <div class="input-group">
+                                            <input type="text" id='pesquisa' placeholder='Nome ou Nº' class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-dan" onclick="receberPesquisa()"><i class=" fas fa-search "></i></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="row no-gutters ">
+                                                <div id='imagemPokemon' class="col-7 col-sm-7">
+                                                    <img src='img/pokebola.png' style='height: auto; width: 110px; margin-left: 2px; margin-top: 2px;'>
+                                                </div>
+                                                <div id='pokeInfos' class="col-5 col-sm-5" style='font-size: 15px; margin-top: 10px;'>
+                                                    <p class="numeropokemons">Nº???</p>
+                                                    <p>Quem é esse Pokemon?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> <img src='./img/n6.jpg'></td>
+                            </tr>
+                            <tr>
+                                <td> <img src='./img/n7.jpg'></td>
+                                <td> <img src='./img/n8.jpg'></td>
+                                <td> <img src='./img/n9.jpg'></td>
+                            </tr>
+                            <tr>
+                                <td> <img src='./img/n10.jpg'></td>
+                                <td>
+
+                                    <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel" style="width: 210px; height: 154px; background-color:#E6E6FA	; border-radius: 2px;">
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev" style="margin-top: 8px; margin-left: 5px;">
+                                            <button type="button" class="btn btn-dan">L1</button>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" data-slide="next" style="margin-top: 8px; margin-right: 5px;">
+                                            <button type="button" class="btn btn-dan">R1</button>
+                                        </a>
+                                        <div class="carousel-inner">
+                                            <div id='primeiroCarousel' class="carousel-item active ">
+                                                <div>
+                                                    <p class='abilitiesStyle'>Abilitie 1</p>
+
+                                                </div>
+                                                <div class='overflow'>
+                                                    <p id='primeiraHabilidade'> 1# ... </p>
+                                                </div>
+
+                                            </div>
+                                            <div id='segundoCarousel' class="carousel-item">
+                                                <div>
+                                                    <p class='abilitiesStyle'>Abilitie 2</p>
+                                                </div>
+                                                <div class='overflow'>
+                                                    <p id='segundaHabilidade'> 2# ... </p>
+                                                </div>
+                                            </div>
+                                            <div id='terceiroCarousel' class="carousel-item">
+                                                <div style="height: 33px;">
+                                                    <p class='abilitiesStyle'>Damage</p>
+                                                </div>
+                                                <div class='overflow'>
+                                                    <p id='strong'> 2x: <br> 1x: <br> 0x: </p>
+                                                </div>
+                                            </div>
+                                            <div id='terceiroCarousel' class="carousel-item">
+                                                <div style="height: 33px;">
+                                                    <p class='abilitiesStyle'>Weakness</p>
+                                                </div>
+                                                <div class='overflow'>
+                                                    <p id='weak'> 2x: <br> 1x: <br> 0x:</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+                                <td> <img src='./img/n12.jpg'></td>
+                            </tr>
+                            <tr>
+                                <td> <img src='./img/n13.jpg'></td>
+                                <td> <img src='./img/n14.jpg'></td>
+                                <td> <img src='./img/n15.jpg'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class='col-md-3'>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!--=======Footer=======-->
+
+    <div class="footer-top" style="background-color: slategrey; color: #FFFFFF;">
+        <div class="container">
+            <br>
+            <div class="copyright">
+                &copy;Copyright <strong><span>Classificados Arbyte</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a style="color: #FFFFFF" href="https://www.linkedin.com/in/wallace-pinto/">Wallace Pinto</a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript " src="js/code.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+</body>
+
+</html>
