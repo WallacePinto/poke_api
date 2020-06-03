@@ -212,7 +212,7 @@ function fracoContra1(pos1) {
                 var nome = tipoArr.indexOf(resposta.data.damage_relations.no_damage_from[i].name);
                 semDano += ' ' + spanTipos[nome];
             }
-            document.querySelector('#weak').innerHTML = `<p>2x: ${dobroDeDano}<br> 0.5x: ${metadeDeDano}<br>0x: ${semDano}</p>`
+            document.querySelector('#weak').innerHTML = `<p>Type #1: ${spanTipos[pos1]} <br>2x: ${dobroDeDano}<br> 0.5x: ${metadeDeDano}<br>0x: ${semDano}</p>`
         })
         .catch(function(erro) {
             console.log(erro)
