@@ -319,13 +319,13 @@ function infoPokemons(pesquisa) {
                 tipos[1] = spanTipos[pos2];
                 forteContra2(pos1, pos2);
                 fracoContra2(pos1, pos2)
-                document.querySelector('#pokeInfos').innerHTML = `<p class="numeropokemons">Nº${numero}</p><p class="numeropokemons">${nome}</p><p>${tipos[0]}/${tipos[1]}</p>`
+                document.querySelector('#pokeInfos').innerHTML = `<p class="numeropokemons">Nº${numero}<br>${nome}<br>${tipos[0]}  ${tipos[1]}</p>`
             } else {
                 pos1 = tipoArr.indexOf(resposta.data.types[0].type.name);
                 tipos[0] = spanTipos[pos1];
                 forteContra1(pos1);
                 fracoContra1(pos1)
-                document.querySelector('#pokeInfos').innerHTML = `<p class="numeropokemons">Nº${numero}</p><p class="numeropokemons">${nome}</p><p>${tipos[0]}</p>`
+                document.querySelector('#pokeInfos').innerHTML = `<p class="numeropokemons">Nº${numero}<br>${nome}<br>${tipos[0]}</p>`
             }
             var habilidade1;
             var habilidade2;
