@@ -41,97 +41,100 @@
                                 <td>
                                     <div style="width: 210px; height: 153px; background-color:#E6E6FA	; border-radius: 2px;">
                                         <div class="input-group">
-                                            <input type="text" id='pesquisa' placeholder='Nome ou Nº' class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <form autocomplete="off" action="/action_page.php">
+                                                <div class="autocomplete">
+                                                    <input id="myInput" type="text" name="myCountry" placeholder="Nome ou Nº" style="width:165px; height: 40px;">
+                                                </div>
+                                            </form>
                                             <div class="input-group-append">
                                                 <button type="button" class="btn btn-dan" onclick="receberPesquisa()"><i class=" fas fa-search "></i></button>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="row no-gutters ">
-                                                <div id='imagemPokemon' class="col-7 col-sm-7">
-                                                    <img src='img/pokebola.png' style='height: auto; width: 110px; margin-left: 2px; margin-top: 2px;'>
-                                                </div>
-                                                <div id='pokeInfos' class="col-5 col-sm-5" style='font-size: 15px; margin-top: 10px;'>
-                                                    <p class="numeropokemons">Nº???</p>
-                                                    <p>Quem é esse Pokemon?</p>
-                                                </div>
+                                        <div class="row no-gutters ">
+                                            <div id='imagemPokemon' class="col-7 col-sm-7">
+                                                <img src='img/pokebola.png' style='height: auto; width: 110px; margin-left: 2px; margin-top: 2px;'>
+                                            </div>
+                                            <div id='pokeInfos' class="col-5 col-sm-5" style='font-size: 15px; margin-top: 10px;'>
+                                                <p class="numeropokemons">Nº???</p>
+                                                <p>Quem é esse Pokemon?</p>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td> <img src='./img/n6.jpg'></td>
-                            </tr>
-                            <tr>
-                                <td> <img src='./img/n7.jpg'></td>
-                                <td> <img src='./img/n8.jpg'></td>
-                                <td> <img src='./img/n9.jpg'></td>
-                            </tr>
-                            <tr>
-                                <td> <img src='./img/n10.jpg'></td>
-                                <td>
-
-                                    <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel" style="width: 210px; height: 154px; background-color:#E6E6FA	; border-radius: 2px;">
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev" style="margin-top: 8px; margin-left: 5px;">
-                                            <button type="button" class="btn btn-dan">L1</button>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" data-slide="next" style="margin-top: 8px; margin-right: 5px;">
-                                            <button type="button" class="btn btn-dan">R1</button>
-                                        </a>
-                                        <div class="carousel-inner">
-                                            <div id='primeiroCarousel' class="carousel-item active ">
-                                                <div>
-                                                    <p class='abilitiesStyle'>Abilitie 1</p>
-
-                                                </div>
-                                                <div class='overflow'>
-                                                    <p id='primeiraHabilidade'> 1# ... </p>
-                                                </div>
-
-                                            </div>
-                                            <div id='segundoCarousel' class="carousel-item">
-                                                <div>
-                                                    <p class='abilitiesStyle'>Abilitie 2</p>
-                                                </div>
-                                                <div class='overflow'>
-                                                    <p id='segundaHabilidade'> 2# ... </p>
-                                                </div>
-                                            </div>
-                                            <div id='terceiroCarousel' class="carousel-item">
-                                                <div style="height: 33px;">
-                                                    <p class='abilitiesStyle'>Damage</p>
-                                                </div>
-                                                <div class='overflow'>
-                                                    <p id='strong'> 2x: <br> 1x: <br> 0x: </p>
-                                                </div>
-                                            </div>
-                                            <div id='terceiroCarousel' class="carousel-item">
-                                                <div style="height: 33px;">
-                                                    <p class='abilitiesStyle'>Weakness</p>
-                                                </div>
-                                                <div class='overflow'>
-                                                    <p id='weak'> 2x: <br> 1x: <br> 0x:</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                                <td> <img src='./img/nteste.jpg'></td>
-                            </tr>
-                            <tr>
-                                <td> <img src='./img/n13.jpg'></td>
-                                <td> <img src='./img/n14.jpg'></td>
-                                <td> <img src='./img/n15.jpg'></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
+                </td>
+                <td> <img src='./img/n6.jpg'></td>
+                </tr>
+                <tr>
+                    <td> <img src='./img/n7.jpg'></td>
+                    <td> <img src='./img/n8.jpg'></td>
+                    <td> <img src='./img/n9.jpg'></td>
+                </tr>
+                <tr>
+                    <td> <img src='./img/n10.jpg'></td>
+                    <td>
+
+                        <div id="carouselExampleControls" data-interval="false" class="carousel slide" data-ride="carousel" style="width: 210px; height: 154px; background-color:#E6E6FA	; border-radius: 2px;">
+                            <a class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev" style="margin-top: 8px; margin-left: 5px;">
+                                <button type="button" class="btn btn-dan">L1</button>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" data-slide="next" style="margin-top: 8px; margin-right: 5px;">
+                                <button type="button" class="btn btn-dan">R1</button>
+                            </a>
+                            <div class="carousel-inner">
+                                <div id='primeiroCarousel' class="carousel-item active ">
+                                    <div>
+                                        <p class='abilitiesStyle'>Abilitie 1</p>
+
+                                    </div>
+                                    <div class='overflow'>
+                                        <p id='primeiraHabilidade'> 1# ... </p>
+                                    </div>
+
+                                </div>
+                                <div id='segundoCarousel' class="carousel-item">
+                                    <div>
+                                        <p class='abilitiesStyle'>Abilitie 2</p>
+                                    </div>
+                                    <div class='overflow'>
+                                        <p id='segundaHabilidade'> 2# ... </p>
+                                    </div>
+                                </div>
+                                <div id='terceiroCarousel' class="carousel-item">
+                                    <div style="height: 33px;">
+                                        <p class='abilitiesStyle'>Damage</p>
+                                    </div>
+                                    <div class='overflow'>
+                                        <p id='strong'> 2x: <br> 1x: <br> 0x: </p>
+                                    </div>
+                                </div>
+                                <div id='terceiroCarousel' class="carousel-item">
+                                    <div style="height: 33px;">
+                                        <p class='abilitiesStyle'>Weakness</p>
+                                    </div>
+                                    <div class='overflow'>
+                                        <p id='weak'> 2x: <br> 1x: <br> 0x:</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </td>
+                    <td> <img src='./img/nteste.jpg'></td>
+                </tr>
+                <tr>
+                    <td> <img src='./img/n13.jpg'></td>
+                    <td> <img src='./img/n14.jpg'></td>
+                    <td> <img src='./img/n15.jpg'></td>
+                </tr>
+                </tbody>
+                </table>
             </div>
-            <div class='col-md-3'>
-            </div>
-            <br>
         </div>
+        <div class='col-md-3'>
+        </div>
+        <br>
+    </div>
     </div>
 
     <!--=======Footer=======-->
