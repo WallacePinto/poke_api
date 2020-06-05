@@ -21,9 +21,18 @@ var spanTipos = [`<span style="background: #6890F0; border-style: solid none; bo
     `<span style="background: #F0B6BC; border-style: solid none; border-width: 1px; border-top-color: #F5CAD1; border-bottom-color: #905F63; border-radius: 5px; padding: 0.15em; font-size: 8pt; color: #F8F8F8; text-shadow: 0px 1px 1px #807870;"><span style="color: #F8F8F8;">Fairy</span></span>`
 ]
 
-var nomePokemons = ['Charmander', 'Charmilion', 'Charizard', 'Chikorita', 'Caterpie', 'Casccon'];
+var nomePokemons = ['Charmander', 'Charmilion', 'Charizard', 'Chikorita', 'Caterpie', 'Mew', 'Mewtwo', 'Mudkip', 'Montres'];
 
 autocomplete(document.getElementById("myInput"), nomePokemons);
+
+var input = document.getElementById("myInput");
+
+input.addEventListener("keydown", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        document.getElementById("btnPesquisar").click();
+    }
+});
 
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
